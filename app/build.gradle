@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 22
-    buildToolsVersion "22.0.1"
+    compileSdkVersion 24
+    buildToolsVersion "23.0.3"
 
     defaultConfig {
         applicationId "com.robot.tongbanjie"
-        minSdkVersion 14
-        targetSdkVersion 22
+        minSdkVersion 23
+        targetSdkVersion 24
         versionCode 1
         versionName "1.0"
     }
@@ -26,8 +26,6 @@ repositories {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:22.2.0'
-    compile 'com.android.support:design:22.2.0'
     compile 'com.jakewharton:butterknife:7.0.1'
     compile 'com.bartoszlipinski.recyclerviewheader:library:1.2.1'
     compile 'info.hoang8f:android-segmented:1.0.6'
@@ -36,10 +34,12 @@ dependencies {
     compile('cn.trinea.android.view.autoscrollviewpager:android-auto-scroll-view-pager:1.1.2') {
         exclude module: 'support-v4'
     }
-    compile 'com.android.support:recyclerview-v7:22.2.0'
     compile 'org.greenrobot:eventbus:3.0.0'
     compile 'com.binaryfork:spanny:1.0.3'
     compile 'com.github.PhilJay:MPAndroidChart:v2.2.3'
     // compile 'com.leaking.slideswitch:slideswitch:1.0.0'
     compile project(':ultra_pull_refresh_lib')
+    compile 'com.android.support:recyclerview-v7:24.1.1'
+    compile 'com.android.support:design:24.1.1'
+    compile 'com.android.support:appcompat-v7:24.1.1'
 }
